@@ -11,4 +11,12 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.2].define(version: 0) do
+  create_table "restaurant", force: :cascade do |t|
+    t.date "date_found"
+    t.string "location"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+end
 end
